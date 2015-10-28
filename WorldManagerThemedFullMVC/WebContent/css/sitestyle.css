@@ -1,0 +1,211 @@
+.navfoot
+{
+	background-color:#a64d00;
+	height:25px;
+	//height:100%;
+	width:90px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	float:left;
+}
+.banner
+{
+	background-color:#479ed6;
+	//height:60px;
+	width:100%;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	float:left;
+
+}
+
+
+body{
+	border:0px;
+	width:100%;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	background-color:white;
+	//min-width:900px;
+}
+
+table {
+    border-collapse: collapse;
+    width:80%;
+    margin:auto;
+    padding:0px 0px 0px 0px;
+    //padding:20px 20px 20px 20px;
+}
+
+table, td, th {
+    border: 2px solid #479ed6;
+
+}
+
+tr:nth-child(even) {
+	background: #CCC
+	}
+tr:nth-child(odd) {
+	background: #FFF
+	}
+
+td {
+    text-align: center;
+}
+
+.tablecontainer{
+	margin:auto;
+    padding:0px 0px 0px 0px;
+}
+
+
+.defaultText
+{
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:12px;
+}
+
+.textNormal
+{
+	font-weight:normal;
+}
+
+.textBold
+{
+	font-weight:bold;
+}
+
+.allnavs{
+
+}
+
+.content
+{
+	//width:100px;
+    width:100%;
+    //width:100%;
+	padding:5px 5px 5px 5px;
+	//margin:auto;
+	background-color:white;
+	height:100%;
+	//border:90px;
+}
+
+.module-container{
+	width:100%;
+	margin:auto;
+	padding:0px 0px 0px 0px;
+	background-color:white;
+	display:inline-block;
+}
+
+.footer
+{
+	float:left;
+	width:100%;
+	height:25px;
+	background-color:black;
+	color:white;
+	font-size:10px;
+}
+
+.footer a
+{
+	//color:white;
+	font-size:10px;
+}
+
+.homecaption
+{
+	
+	width:80%;
+	color:black;
+	font-size:18px;
+	padding:20px 20px 20px 20px;
+	margin:auto;
+	border: 5px #479ed6 solid;
+	//background-color:black;
+	//display:block;
+	//background:url(background01.jpg);
+    //background-size:100% 100%;
+    //background-repeat:no-repeat;
+    
+    
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+     border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */    
+}
+
+
+.pagecaption{
+	width:90%;
+    padding:20px 20px 20px 20px;
+	margin:auto;
+	font-size:18px;
+	border: 1px #e4e4e4 solid;
+	clear:auto;
+	font-weight:bold;
+}
+#side-nav-ext{
+	background-color:#4199d2;
+	font-size:14px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	border: 0px;
+	width:120px;
+	height:1600px;
+	float:left;
+	clear:all;
+}
+
+
+h1{
+	padding:20px 20px 20px 20px;
+	border: 50px;
+	margin:auto;
+}
+form{
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	border: 0px;
+	
+}
+.altheader{
+	color:white;
+}
+
+.picpartition{
+	width:70%;
+	color:white;
+	font-size:18px;
+	padding:0px 0px 0px 0px;
+	margin:auto;
+	//border: 1px #e4e4e4 solid;
+	//border: 5px #479ed6 solid;
+	background-color:white;
+	//clear:all;
+}
+
+.site-color-siteblue-hilight{
+	//font-weight:bold;
+	color:#4199d2;
+	font-size:20px;
+}
+.site-color-siteblue-normal{
+	//font-weight:bold;
+	color:#4199d2;
+	font-size:14px;
+}
+.site-color-green-hilight{
+	//font-weight:bold;
+	color:#98bf21;
+	font-size:22px;
+}
+
+.site-color-red-hilight{
+	//font-weight:bold;
+	color:red;
+	font-size:22px;
+}

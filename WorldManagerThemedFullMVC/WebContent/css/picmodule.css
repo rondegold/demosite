@@ -1,0 +1,139 @@
+
+.mpiccontainer{
+	width:310px;
+	height:350px;
+	color:#479ed6;
+	background-color:white;
+	font-size:14px;
+	padding:10px 10px 10px 10px;
+	border: 1px #e4e4e4 solid;
+	float:left;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+     border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.mimage{
+	max-width:100%;
+}
+
+#mytravel{
+	width:100%;
+    margin:auto;
+	padding:0px 0px 0px 0px;
+	border: 0px;
+	background-color:white;
+
+}
+
+.mcaption{
+    width:305px;
+	font-size:20px;
+	//font-weight:bold;
+	color:black;
+	border: 0px;
+	padding:5px 0px 3px 5px;
+	-webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+}
+
+.mbottomtext{
+	padding:4px 4px 4px 4px;
+	border: 0px;
+	font-size:12px;
+	width:302px;
+}
+
+
+/*targeting individual unique elements using the key word when invoking loadPicModule("firstdemo", "module.xml", "home")*/
+/*NOTE the - 0, 1, 2, 3, 4, etc appended to the end of the key word to target individual modules*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+#firstdemo0_mpiccontainer .mcaption{
+	background-color:#98bf21;
+}
+
+#firstdemo1_mpiccontainer .mcaption{
+	background-color:#479ed6;
+}
+
+#firstdemo2_mpiccontainer .mcaption{
+	background-color:red;
+}
+
+#firstdemo0_mpiccontainer .mbottomtext{
+	color:blue;
+}
+
+#firstdemo1_mpiccontainer .mbottomtext{
+	color:green;
+}
+
+#firstdemo2_mpiccontainer .mbottomtext{
+	color:red;
+}
+
+
+
+
+
+#firstdemo5_mpiccontainer{
+	background-color:#eda3c4;
+}
+
+#firstdemo5_mpiccontainer .mcaption{
+	background-color:#ed5d9d;
+	color:white;
+}
+
+#firstdemo5_mpiccontainer .mbottomtext{
+	color:white;
+	background-color:#ed5d9d;
+}
+
+
+
+#firstdemo3_mpiccontainer{
+	background-color:#f5d865;
+}
+
+#firstdemo3_mpiccontainer .mcaption{
+	background-color:#f8bc07;
+}
+#firstdemo3_mpiccontainer .mbottomtext{
+	color:white;
+	background-color:red;
+}
+
+
+
+
+
+#secondemo0_mpiccontainer .mcaption{
+	background-color:#6df2e4;
+}
+
+#secondemo2_mpiccontainer .mcaption{
+	background-color:#479ed6;
+}
+
+#secondemo1_mpiccontainer .mcaption{
+	background-color:red;
+}
+
+#secondemo0_mpiccontainer .mbottomtext{
+	color:blue;
+}
+
+#secondemo2_mpiccontainer .mbottomtext{
+	color:green;
+}
+
+#secondemo1 .mbottomtext{
+	color:red;
+}

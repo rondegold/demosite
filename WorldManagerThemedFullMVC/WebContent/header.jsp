@@ -1,0 +1,1 @@
+<div class="banner"><img src="${initParam.bannerImage}" /><img src="${initParam.socialimg}" style="float:right" /></div>	
