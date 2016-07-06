@@ -1,0 +1,51 @@
+
+.mpiccontainer{
+	width:270px;
+	height:380px;
+	color:#818181;
+	background-color:white;
+	margin:5px;
+	font-size:14px;
+	padding:10px 10px 10px 10px;
+	border: 1px #e4e4e4 solid;
+	float:left;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+     border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.mimage{
+	max-width:100%;
+}
+
+#mytravel{
+	width:100%;
+    margin:auto;
+	padding:0px 0px 0px 0px;
+	border: 0px;
+	background-color:white;
+
+}
+
+.mcaption{
+    width:265px;
+	font-size:20px;
+	//font-weight:bold;
+	color:black;
+	border: 0px;
+	padding:5px 0px 3px 5px;
+	-webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+}
+
+.mbottomtext{
+	padding:4px 4px 4px 4px;
+	border: 0px;
+	font-size:12px;
+	width:262px;
+}
+
+

@@ -1,0 +1,13 @@
+<picmodule>
+<mdata tag="fashion01">
+     <marticle mimg="images/fash01.jpg" mcaption="Halter Swimwear" price="$21.99">Sexy Halter Hollow Out Solid Color One-Piece Swimwear For Women</marticle>
+     <marticle mimg="images/fash02.jpg" mcaption="Tote Bag" price="$23.99">Trendy Women's Tote Bag With Hasp and Printed Design</marticle>
+     <marticle mimg="images/fash03.jpg" mcaption="Polka Dot Skirt" price="$22.99">Vintage High-Waisted Polka Dot Ruffled Skirt For Women</marticle>
+     <marticle mimg="images/fash04.jpg" mcaption="Pumps With Rivets" price="$20.99">Punk Women's Pumps With Rivets and Patent Leather Design</marticle>
+     <marticle mimg="images/fash05.jpg" mcaption="Skinny Leggings" price="$25.99">Stylish Elastic Waist Solid Color Faux Leather Skinny Leggings For Women</marticle>
+     <marticle mimg="images/fash06.jpg" mcaption="A-Line Skirt" price="$23.99">Chic Color Block High Waist Geometrical Print A-Line Skirt For women</marticle>
+     <marticle mimg="images/fash07.jpg" mcaption="Lace-Up Coat" price="$29.99">Stylish Turn-Down Neck Long Sleeve Spliced Button Design Lace-Up Coat</marticle>
+     <marticle mimg="images/fash08.jpg" mcaption="Hooded Jacket" price="$28.99">Stylish Hooded Long Sleeve Solid Color PU Jacket For Women</marticle>
+     <marticle mimg="images/fash09.jpg" mcaption="Christmas Leggings" price="$19.99">Women's Stylish High Waist Geometrical Print Christmas Leggings</marticle>
+ </mdata>  
+</picmodule>

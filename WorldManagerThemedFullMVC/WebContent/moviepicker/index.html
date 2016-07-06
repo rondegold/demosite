@@ -1,0 +1,82 @@
+<html ng-app="movieApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Angular.js Example</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/video-app01.css">
+    <link rel="stylesheet" type="text/css" href="css/accordian.css">
+    <script>
+      var movieApp = angular.module('movieApp', ['ngRoute']);
+      movieApp.config(function($routeProvider, $sceDelegateProvider) {
+    	 $sceDelegateProvider.resourceUrlWhitelist([
+    	  // Allow same origin resource loads.
+    	  'self',
+    	   // Allow loading from our assets domain.  Notice the difference between * and **.
+    	  'https://www.youtube.com/**'
+    	  ]);
+    	 
+    	 
+        $routeProvider.
+          when('/', {
+            templateUrl: 'movie-list.html',
+            controller: 'movieListCtrl'
+          }).
+          when('/:movieName', {
+            templateUrl: 'movie-detail.html',
+            controller: 'movieDetailCtrl'
+          }).
+          otherwise({
+            redirectTo: '/'
+          });
+      });
+      movieApp.factory('movies', function($http){
+        function getData(callback){
+          $http({
+            method: 'GET',
+            url: 'movie-list.json',
+            cache: true
+          }).success(callback);
+        }
+        return {
+          list: getData,
+          find: function(name, callback){
+            getData(function(data) {
+              var movie = data.filter(function(entry){
+                return entry.name === name;
+              })[0];
+              callback(movie);
+            });
+          },
+          getBk: function(bkimg){
+        	  console.log(bkimg)
+        	  document.body.style.backgroundImage = "url("+bkimg+")";        	  
+           }
+        };
+      });
+      movieApp.controller('movieListCtrl', function ($scope, movies){
+    	  movies.list(function(movies) {
+          $scope.movies = movies;
+          $scope.lableBkColor = {'background-color': 'grey'};
+        });
+      });
+      movieApp.controller('movieDetailCtrl', function ($scope, $routeParams, movies){
+    	  movies.find($routeParams.movieName, function(movie) {
+          $scope.movie = movie;
+          $scope.lableBkColor = {'background-color': movie.themecolor[0]};
+          $scope.lableHeadBkColor = {'background-color': movie.themecolor[1]};
+          $scope.backButtonStyle = {'background-color': movie.themecolor[1], 'color': 'white', 'padding-left': '15px'};
+          $scope.reviewHeadStyle = {'color': movie.themecolor[1]}
+          movies.getBk($scope.movie.backgroundimage);
+        });
+      });
+      movieApp.filter('encodeURI', function(){
+        return window.encodeURI;
+      });
+      
+    </script>
+  </head>
+  <body ng-view>
+    <!-- <div ng-view></div>-->
+  </body>
+</html>

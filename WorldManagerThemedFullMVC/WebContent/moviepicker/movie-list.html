@@ -1,0 +1,23 @@
+
+<div id=""></div>
+<div class="fixed-nav"  ng-style="lableBkColor">
+		<ul style="list-style-type:none; padding:0px; margin:0px 0px 0px 0px;">
+			<li id="homeLink"><a href="../index.jsp">Home</a></li>
+			<li id="loginLink"><a href="../travel02.jsp">Demo-2</a></li>
+			<li id="listCitiesLink"><a href="../travel01.jsp">Demo-1</a></li>
+			<li id="listCountriesLink"><a href="http://www.econgaline.com/portfolio/portfoliosite.html" target="_blank">Portfolio</a></li>			
+		</ul>
+</div>
+<div class="alt-header2"></div>
+<div class="instruct-caption">Angular Demo Single Page Application showing a List View of clickable items and Detail View when an item is clicked. Used: Jason data, Angularjs factory, $sceDelegateProvider, $routeProvider, $http, $routeParams, templates, caching etc.</div>
+<h2 class="genre-head">SCIENCE FICTION</h2>
+<div class="movie-list-content">
+  <div class="movie-list-element" ng-repeat="movie in movies">
+    <a href="#/{{movie.name | encodeURI}}">
+    <div class="list-title">{{movie.title}}</div>
+    <img ng-src="{{movie.imgfolder}}{{movie.posters[0]}}">
+    </a>
+    <img class="star-img" ng-src="{{movie.stars}}">
+  </div>
+</div>
+

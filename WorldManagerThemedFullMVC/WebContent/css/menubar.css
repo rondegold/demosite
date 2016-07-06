@@ -1,8 +1,12 @@
-//.topnav li{
-	//display: inline; 
-	//float: left;
-//}
 
+
+.fixed-nav{
+position: fixed; 
+width: 100%; 
+top: 0; 
+height: 30px; 
+color:blue;
+}
 
 .navbar
 {

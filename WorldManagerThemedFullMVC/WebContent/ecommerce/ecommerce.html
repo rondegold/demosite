@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML5 CANVAS ODOMETER</title>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../js/greensock/minified/TweenMax.min.js"></script>
+<script src="../js/greensock/minified/plugins/AttrPlugin.min.js"></script>
+<script src="../js/greensock/minified/plugins/KineticPlugin.min.js"></script>
+<script src="../js/greensock/minified/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="js/picmodule01.js"></script>
+<script type="text/javascript" src="js/ecommerce.js"></script>
+<link rel="stylesheet" type="text/css" href="css/ecommerce.css">
+<link rel="stylesheet" type="text/css" href="css/picmodule.css" >
+<script>
+window.onload = function(){
+	imgRotater = new Odometer("images/ecom_main_01.jpg", 250, 1250, 1, "rotate-images");
+	//load pic module
+	  var pcm = new PicModuleStandard(this, "secondemo", "module.xml", "fashion01");
+}
+</script>
+</head>
+<body>
+<div class="fixed-nav">
+		<ul style="list-style-type:none; padding:0px; margin:0px 0px 0px 0px;">
+			<li id="homeLink"><a href="../index.jsp">Home</a></li>
+			<li id="loginLink"><a href="../travel02.jsp">Demo-3</a></li>
+			<li id="listCitiesLink"><a href="../travel01.jsp">Demo-2</a></li>
+			<li id="travelink01"><a href="../video-app01/video-app01.html">DEMO-1</a></li>
+			<li id="listCountriesLink"><a href="http://www.econgaline.com/portfolio/portfoliosite.html" target="_blank">Portfolio</a></li>			
+		</ul>
+</div>
+<div style="height:35px" class="padding"></div>
+
+<div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">SUPER SAVINGS</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Women
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Women's Dresses</a></li>
+            <li><a href="#">Women's Tops</a></li>
+            <li><a href="#">Women's Bottoms</a></li>
+            <li><a href="#">Women's Outerwear</a></li> 
+            <li><a href="#">Women's Activewear</a></li>
+            <li><a href="#">Women's Swimwear</a></li>
+            <li><a href="#">Women's Intimates</a></li>
+            <li><img src="images/black-dress.jpg"></img></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Men
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Jackets and Outerwear</a></li>
+            <li><a href="#">Men's Pants</a></li>
+            <li><a href="#">Men's Shorts</a></li>
+            <li><a href="#">Cardigans and Sweaters</a></li> 
+            <li><a href="#">Men's Shirts</a></li>
+            <li><a href="#">Men's Jeans</a></li>
+            <li><a href="#">Men's Swimwear</a></li>
+            <li><img src="images/yellow-jacket-guy.jpg"></img></li>
+          </ul>
+        </li> 
+        <li><a href="#">Girls</a></li>
+        <li><a href="#">Boys</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+
+<ul class="pagination pagination-sm pull-right">
+  <li><a href="#">«</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">6</a></li>
+  <li><a href="#">7</a></li>
+  <li><a href="#">8</a></li>
+  <li><a href="#">»</a></li>
+</ul>
+
+
+<div style="height:52px" class="padding"></div>
+
+
+
+<div id="rotate-header">CRAZY DECEMBER SALE</div>
+<div id="content01">
+<div id="rotate-images"></div>
+</div>
+<div id="rotate-footer"></div>
+<div style="height:5px" class="padding"></div>
+
+<div id="secondemo" class="module-container">		
+            <!-- images loaded dynamically here 'mytravel' (id) - is the second argument of PicModuleStandard(this, "mytravel", "module.xml", "home")-->
+            <!-- individual cards can be targeted with their ids 'mytravel1', 'mytravel2', 'mytravel3' etc. Cards are also automatically loaded into the div with id "mytravel"  (or what ever string you use for second argument--> 
+            <!-- "home" in this case is  the value of the tag attribute in the XML nodes subset to be targeted and is the last argument -->           
+</div>
+
+
+
+
+<script>
+var count = 0;
+var timer = setInterval(rotateImages,5000);
+
+function rotateImages(){
+	if(count >9){
+		count = 0;
+	}
+	imgRotater.animate(count);
+	count += 1;
+} 
+</script>
+
+
+</body>
+</html>

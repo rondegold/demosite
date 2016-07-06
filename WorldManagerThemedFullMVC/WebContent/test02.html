@@ -1,0 +1,85 @@
+<html>
+<head><title>MYPAGE</title></head>
+<body>
+
+<textarea style="width:300;height:300" id="keyText"></textarea>
+<button id="goButton1">go</button>
+
+<div id="canvas-div" style="height:50">
+</div>
+
+<input type="text" id="paliText" style="width:300">
+<button id="goButton2">go</button>
+
+
+<script>
+////////////////////////////////////////////////////////////////
+goButton1.addEventListener("click", calculate);
+keyText.value = "John,2"+"\n"+"Jane,3"+"\n"+"John,4"+"\n"+"Jane,5";
+
+goButton2.addEventListener("click", isPalin);
+
+function calculate(){
+	
+	var personArray = [];
+	var personObject = {}
+	var allPersonsArray = [];
+	var i;
+	
+	if(keyText.value == ""){
+		keyText.value = "John,2"+"\n"+"Jane,3"+"\n"+"John,4"+"\n"+"Jane,5";
+		//return
+	}
+
+	personArray = keyText.value.split("\n");
+
+	try{
+   if(haveClicked){
+	   haveClicked = false;
+	   keyText.value = "";
+	   keyText.value = "John,2"+"\n"+"Jane,3"+"\n"+"John,4"+"\n"+"Jane,5";
+	   return
+   }
+	}catch(e){}
+
+	
+	for(i=0;i<personArray.length;i++){
+		
+	   var name_value = personArray[i].split(",");
+	   var nm = name_value[0];
+	   var vl = parseInt(name_value[1]);
+		if(personObject[nm]){
+			personObject[nm].valAmount += vl;
+			continue
+		}
+		if(!personObject[nm]){
+			personObject[nm] = {};
+			personObject[nm].name = nm;
+			personObject[nm].valAmount = vl;
+			allPersonsArray.push(personObject[nm]);
+		} 
+	}
+	
+	keyText.value = "";
+	
+	for(i=0;i<allPersonsArray.length;i++){
+		keyText.value += allPersonsArray[i].name+" AMOUNT IS = "+allPersonsArray[i].valAmount+"\n";
+	}
+	
+	haveClicked = true;
+}
+
+//////////////////////////////////////////////////////////////////////
+
+
+function isPalin() {
+	var tx = document.getElementById("paliText");
+	str = tx.value;
+    str = str.replace(/\W/g, '').toLowerCase();
+    tx.value = (str == str.split('').reverse().join(''));
+}
+
+////////////////////////////////////////////////////////////////////
+</script>
+</body>
+</html>

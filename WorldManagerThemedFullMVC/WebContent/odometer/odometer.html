@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML5 CANVAS ODOMETER</title>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> -->
+<script src="../js/greensock/minified/TweenMax.min.js"></script>
+<script src="../js/greensock/minified/plugins/AttrPlugin.min.js"></script>
+<script src="../js/greensock/minified/plugins/KineticPlugin.min.js"></script>
+<script src="../js/greensock/minified/plugins/CSSPlugin.min.js"></script>
+<script type="text/javascript" src="js/odometer3.js"></script>
+<link rel="stylesheet" type="text/css" href="css/odometer.css">
+<script>
+window.onload = function(){
+	odo01 = new Odometer("images/odometer01numbers.png", 50, 50, 6, "odometer01");
+	odo02 = new Odometer("images/odometer01.gif", 50, 50, 6, "odometer02");
+	odo03 = new Odometer("images/odopics.jpg", 200, 200, 6, "odometer03");
+}
+</script>
+</head>
+<body>
+<div class="fixed-nav">
+		<ul style="list-style-type:none; padding:0px; margin:0px 0px 0px 0px;">
+			<li id="homeLink"><a href="../index.jsp">Home</a></li>
+			<li id="loginLink"><a href="../travel02.jsp">Demo-3</a></li>
+			<li id="listCitiesLink"><a href="../travel01.jsp">Demo-2</a></li>
+			<li id="travelink01"><a href="../video-app01/video-app01.html">DEMO-1</a></li>
+			<li id="listCountriesLink"><a href="http://www.econgaline.com/portfolio/portfoliosite.html" target="_blank">Portfolio</a></li>			
+		</ul>
+</div>
+
+<div style="width:100%; height:50px">
+</div>
+
+<h2> Created JavaScript HTML5 Odometer-Like Animation Component</h2>
+<h3>(One line of code to implement)</h3>
+If numbers are generated anonymously and randomly can be used for a simple Slot Machine Game with any size images of choice.
+
+<div style="width:100%; height:50px">
+<img src="images/odometer01.gif" style="display:none">
+</div>
+
+Type a 6 digit number: <input type="number" min="0" max="999999" id="tx01"><input type="button" style="margin-left:5px;" value="go" id="but01">
+<div style="margin-top:10px;margin-bottom:50px;" id="odometer01"></div>
+
+
+Type a 6 digit number: <input type="number" min="0" max="999999" id="tx02"><input type="button" style="margin-left:5px;" value="go" id="but02">
+<div style="margin-top:10px;margin-bottom:50px;" id="odometer02"></div>
+
+
+Type a 6 digit number: <input type="number" min="0" max="999999" id="tx03"><input type="button" style="margin-left:5px;" value="go" id="but03">
+<div style="margin-top:10px;margin-bottom:50px;" id="odometer03"></div>
+
+<script>
+(function addListeneres(){
+	var i;
+	for(i=1; i<4; i++){
+		var but = document.getElementById("but0"+i);
+		but.addEventListener("click", clickListener, false);
+	}
+})();
+
+
+function clickListener(e){
+    var i,num;
+	   if(e.currentTarget == document.getElementById("but01")){
+		   num = document.getElementById("tx01").value;
+		   odo01.animate(num);
+	   }
+	   if(e.currentTarget == document.getElementById("but02")){
+		   num = document.getElementById("tx02").value;
+		   odo02.animate(num);
+	   }
+	   
+	   if(e.currentTarget == document.getElementById("but03")){
+		   num = document.getElementById("tx03").value;
+		   odo03.animate(num);
+	   }
+
+}
+</script>
+
+</body>
+</html>

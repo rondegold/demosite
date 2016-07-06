@@ -1,0 +1,184 @@
+[
+{
+"id":"001",
+"title":"Avatar",
+"name":"avatar",
+"themecolor": ["#154f63", "#049ca9", "#10cbba"],
+"backgroundimage":"images/avatar/background.jpg",
+"imgfolder":"images/avatar/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/-u5SiCCmVv0",
+ "review": "Jake Sully has been asleep for six years. More accurately, he’s been in cryogenic stasis five years, nine months and 22 days—the time needed to shuttle him and a crew of scientists and ex-Marine mercenaries from a decaying, resource-depleted Earth to the distant, forest-covered moon Pandora in the year 2154. The job of the heavies? Protect miners, botanists and engineers from the perils of Pandora. Jake’s task, though he’s ex-military...",
+"reviewedBy": "Adam R. Holz",
+"stars":"images/icons/5stars.png"
+},
+
+
+{
+"id":"002",
+"title":"Avengers",
+"name":"avengers",
+"themecolor": ["#3ad7f8", "#041e2b", "#a0dcfe"],
+"backgroundimage":"images/avengers/background.jpg",
+"imgfolder":"images/avengers/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/-m6UKS1L0YQ",
+"review": "Sometimes you can judge a book by its cover. Take Loki, pale-faced exile from the far-away world of Asgard. If you saw him walking down the sidewalk with his horned helmet and glowing spear of doom, chances are you'd nudge your neighbor and say, \"He looks like trouble.\" And that's if you are safely tucked away in café booth where he can't see you. If you're walking toward him, you might cross (quickly) to the other side of the ...",
+"reviewedBy": "Paul Asay",
+"stars":"images/icons/4stars.png"
+},
+
+
+{
+"id":"003",
+"title":"Hunger Games",
+"name":"hungergames",
+"themecolor": ["#4e0e05", "#f5c863", "#c81e07"],
+"backgroundimage":"images/hungergames/background.jpg",
+"imgfolder":"images/hungergames/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/n-7K_OjsDCQ",
+"review": "Every year in the ruins of what was once North America, the evil Capitol of the nation of Panem forces each of its twelve districts to send a teenage boy and girl to compete in the Hunger Games. A twisted punishment for a past uprising and an ongoing government intimidation tactic, The Hunger Games are a nationally televised event in which \"Tributes\" must fight with one another until one survivor remains. Pitted against highly-trained Tributes who have prepared for these Games their entire lives, Katniss...",
+"reviewedBy": "metacritic.com",
+"stars":"images/icons/4stars.png"
+},
+
+
+
+{
+"id":"004",
+"title":"Ironman",
+"name":"ironman",
+"themecolor": ["#e54827", "#b79959", "#feea2b"],
+"backgroundimage":"images/ironman/background.jpg",
+"imgfolder":"images/ironman/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/7H0yo-lDuk0",
+"review": "For a franchise on the brink of fatigue, this attitude seems just about right — especially considering that all of the Iron Man movies are more self-aware comedies than dramas, with overlapping, often improvised-sounding dialogue and winks at the audience which suggest that the filmmakers are fans of Bob Hope and Bing Crosby's affable Road series. This is the kind of film in which the hero can swear revenge against the villain for injuring his friend, then a few scenes later earn big laughs from the sight of Tony Stark in Iron Man regalia tottering down narrow stone steps like a drunk drag queen in nosebleed ...",
+"reviewedBy": "rogerebert.com",
+"stars":"images/icons/3stars.png"
+},
+
+
+{
+"id":"005",
+"title":"Jurassic Park",
+"name":"jurassic",
+"themecolor": ["#272820", "#9c8154", "#ea4b24"],
+"backgroundimage":"images/jurassic/background.jpg",
+"imgfolder":"images/jurassic/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/RFinNxS5KN4",
+"review": "No one is impressed by a dinosaur anymore, notes one character early on in Jurassic World, and it is easy to imagine the same words having passed through the lips of more than one Universal Studios executive in the years since Michael Crichton and Steven Spielbergs 1993 Jurassic Park shattered box office records, along with the glass ceiling for computer-generated visual effects. Two decades and two lackluster sequels later, producer and studio have spared few expenses in crafting a bigger, faster, noisier dinosaur...",
+"reviewedBy": "Scott Foundas",
+"stars":"images/icons/3stars.png"
+},
+
+
+{
+"id":"006",
+"title":"Madmax",
+"name":"madmax",
+"themecolor": ["#ef5a2a", "#ffc67b", "#2b3549"],
+"backgroundimage":"images/madmax/background.png",
+"imgfolder":"images/madmax/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/hEJnMQG9ev8",
+"review": "In a cinematic world filled with redundant and unnecessary sequels, Mad Max is one of the rare older series that actually deserves further exploration and expansion. Writer/director George Miller built a stunning, unique and rich world with his original trilogy of films, and because each sequel operates more as a \"Tales From The Post-Apocalyptic Wasteland\" instead of a subsequent chapter, there exists fantastic potential to keep telling those stories, forever. It was this thinking that got Miller to put together Mad Max: Fury Road, and we should be thankful because it is as crazy, thrilling, gorgeous, and awesome as anyone could really hope, and guaranteed to be one of the best big-screen spectacles of the year.",
+"reviewedBy": "Eric Eisenberg",
+"stars":"images/icons/5stars.png"
+},
+
+
+
+{
+"id":"007",
+"title":"The Matrix",
+"name":"matrix",
+"themecolor": ["#000000", "#30df3a", "#9cf5a3"],
+"backgroundimage":"images/matrix/background.jpg",
+"imgfolder":"images/matrix/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/_Ls19O-9p3s",
+"review": "The Matrix is a visually dazzling cyberadventure, full of kinetic excitement, but it retreats to formula just when it is getting interesting. It is kind of a letdown when a movie begins by redefining the nature of reality, and ends with a shoot-out. We want a leap of the imagination, not one of those obligatory climaxes with automatic weapons ...",
+"reviewedBy": "Roger Ebert",
+"stars":"images/icons/5stars.png"
+},
+
+
+{
+"id":"011",
+"title":"IRobot",
+"name":"irobot",
+"themecolor": ["#056bd7", "#707070", "#cacaca"],
+"backgroundimage":"images/irobot/background.jpg",
+"imgfolder":"images/irobot/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/WorI5HPWbpg",
+"review": "Chicago police detective Del Spooner is prejudiced: He hates robots. Unfortunately for him, it is 2035, and robots have taken over all the worlds menial jobs, including garbage collection, cooking and dog walking. The chief inventor of the robots made by U.S. Robotics is Dr. Alfred Lanning, and he built into them three laws: Law I) Robots may not harm a human being and must prevent humans from being harmed. Law II) Robots must do whatever they are told unless it conflicts with Law I. Law III) Robots must protect themselves unless doing so conflicts with the first two...",
+"reviewedBy": "pluggedin.com",
+"stars":"images/icons/4stars.png"
+},
+
+
+
+{
+"id":"008",
+"title":"Star Treck",
+"name":"startreck",
+"themecolor": ["#295868", "#dab0d8", "#a84820"],
+"backgroundimage":"images/startreck/background.jpg",
+"imgfolder":"images/startreck/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/OjeX5drV9ms",
+"review": "Being a Star Trek fan can be tough. First of all, you've got to deal with the fact that you are a fan of Star Trek, the best (but least cool) science fiction franchise of them all. Then you've got to deal with the fact that many, many hours of the various Star Trek TV shows are no good. Finally, you've got suffer through a bad Star Trek movie for every good Star Trek movie. It is hard life -- it is not like we asked to be Trek fans! This thing just happens to you...",
+"reviewedBy": "screencrush.com",
+"stars":"images/icons/3stars.png"
+},
+
+
+
+{
+"id":"009",
+"title":"Star Wars",
+"name":"starwars",
+"themecolor": ["#080808", "#9bbccb", "#ffffff"],
+"backgroundimage":"images/starwars/background.jpg",
+"imgfolder":"images/starwars/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/sGbxmsDFVnE",
+"review": "Back in 1997, Lucasfilm theatrically re-released the original Star Wars trilogy in celebration of the first films 20th anniversary. The build up was massive, the anticipation huge, but when fans finally saw these remastered versions of their beloved films, there were noticeable changes...",
+"reviewedBy": "screenrant.com",
+"stars":"images/icons/4stars.png"
+},
+
+
+{
+"id":"010",
+"title":"Three Hundred",
+"name":"threehundred",
+"themecolor": ["#132f3b", "#84a0ab", "#ebfaff"],
+"backgroundimage":"images/threehundred/background.jpg",
+"imgfolder":"images/threehundred/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/WorI5HPWbpg",
+"review": "This is not an adaptation of a comic book, it is like a comic book brought to life and pumped with steroids. They must have been buying steroids wholesale for 300. Every single male character, including the hunchback, has the muscles of a finalist for Mr. Universe...",
+"reviewedBy": "Roger Ebert",
+"stars":"images/icons/3stars.png"
+},
+
+{
+"id":"012",
+"title":"Alien",
+"name":"alien",
+"themecolor": ["#203f54", "#74aeba", "#b2dfda"],
+"backgroundimage":"images/alien/background.jpg",
+"imgfolder":"images/alien/",
+"posters":["img01.jpg", "img02.jpg", "img03.jpg", "img04.jpg"],
+"preview": "https://www.youtube.com/embed/WorI5HPWbpg",
+"review": "At its most fundamental level, Alien is a movie about things that can jump out of the dark and kill you. It shares a kinship with the shark in Jaws, Michael Myers in Halloween, and assorted spiders, snakes, tarantulas and stalkers. Its most obvious influence is Howard Hawks The Thing (1951)...",
+"reviewedBy": "Roger Ebert",
+"stars":"images/icons/4stars.png"
+}
+
+]

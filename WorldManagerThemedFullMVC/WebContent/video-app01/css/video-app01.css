@@ -1,0 +1,94 @@
+@CHARSET "ISO-8859-1";
+
+.fixed-nav{
+position: fixed; 
+width: 100%; 
+top: 0; 
+height: 30px; 
+color:blue;
+float:left;	
+padding:0;
+margin: 0;
+}
+
+
+.fixed-nav ul
+{
+	list-style:none;
+	background-color:#ed562b;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.fixed-nav li
+{
+	display: inline; 
+	float:left;
+	width:70px;
+	text-align:center;
+}
+
+.fixed-nav a
+{
+	display:block;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	margin:5px 5px 5px 5px;
+	padding:5px 5px 5px 5px;
+	text-decoration:none;
+	color:white;
+}
+
+.fixed-nav li:hover
+{
+	background-color:#fec67b;
+}
+
+.fixed-nav a:hover
+{
+	color:black;
+}
+
+.active
+{
+	background-color:#fec67b;
+}
+
+
+.alt-header{
+	width:100%;
+	height:50px;
+}
+
+
+
+
+
+
+body{
+	width:100%;
+	heigth:100%;
+	border:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	background-color:black;
+	background-image: url('images/mad-max-bkgrnd01.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	font-size:16px;
+}
+
+#content{
+	width:100%;
+	heigth:100%;
+	border:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+	margin-bottom: 35px;
+}
+

@@ -1,0 +1,55 @@
+<body ng-view style="background-size: 100%;">
+<div id=""></div>
+<div class="fixed-nav" ng-style="lableBkColor">
+		<ul style="list-style-type:none; padding:0px; margin:0px 0px 0px 0px;">
+			<li id="homeLink"><a href="../index.jsp">Home</a></li>
+			<li id="loginLink"><a href="../travel02.jsp">Demo-2</a></li>
+			<li id="listCitiesLink"><a href="../travel01.jsp">Demo-1</a></li>
+			<li id="listCountriesLink"><a href="http://www.econgaline.com/portfolio/portfoliosite.html" target="_blank">Portfolio</a></li>			
+		</ul>
+</div>
+
+<div class="alt-header"></div>
+<a class="back-button-link" href="#/"><h3 ng-style="backButtonStyle">BACK</h3></a>
+
+<div id="content">
+
+<div class="wrapper">
+  <nav class="vertical" style="box-shadow:2px 4px 60px {{movie.themecolor[2]}};">
+    <ul>
+      <li>
+        <label ng-style="lableHeadBkColor" ><em>{{movie.title}}</em></label>
+        <input type="radio" name="verticalMenu"  />
+      </li>
+      <li>
+        <label ng-style="lableBkColor" for="home">POSTERS</label>
+        <input type="radio" checked="true" name="verticalMenu" id="home" />
+        <div class="pic-container">
+          <img ng-src="{{movie.imgfolder}}{{movie.posters[0]}}">
+          <img ng-src="{{movie.imgfolder}}{{movie.posters[1]}}">
+          <img ng-src="{{movie.imgfolder}}{{movie.posters[2]}}">
+          <img ng-src="{{movie.imgfolder}}{{movie.posters[3]}}">
+        </div>
+      </li>
+      <li>
+        <label ng-style="lableBkColor" for="blog">MOVIE REVIEW</label>
+        <input type="radio" name="verticalMenu" id="blog" />
+        <div>
+        <p ng-style="reviewHeadStyle">Reviewed By: {{movie.reviewedBy}}</p>
+        <span>{{movie.review}}</span> 
+        </div>
+      </li>
+      <li>
+        <label ng-style="lableBkColor" for="work">PREVIEW</label>
+        <input type="radio" name="verticalMenu" id="work" />
+        <div>
+          <iframe ng-src="{{movie.preview}}" width="330" height="480" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+</div>
+
+</body>

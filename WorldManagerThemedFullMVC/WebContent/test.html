@@ -30,10 +30,294 @@
   // mbottomtext ---- second set of text usually used as description
   var mysplitString="here is my split string ok";
   var mysplitArray = mysplitString.split(" ");
-  console.log("this"+mysplitArray[3]+"this");
+  //console.log("this"+mysplitArray[3]+"this");
+  
+  
+  
+////////////////////////////////////////////////////////////////////
+
+ 
+sum(9)(7);
+
+function sum(x){
+	
+	return function(y){
+		console.log(x+y);
+	}
+}
+
+
+
+///////////////////////////////////////////////////////////////////
+
+person = function(){ 
+//  function person() {//will also work
+    this.changeName = function (name) {
+        console.log("PERSON CALLED FROM PROTOTYPE");
+        console.log(name);
+        return name;
+    }
+}
+
+//personObji={};
+//person.call(personObji);
+//personObji.changeName("RON")// this will work
+
+//person.changeName(); // will NOT work because changeName() belongs to global scope.
+
+function personObj(){
+	this.name = "jackson";
+	this.age = 18;
+};
+
+
+
+personObj.prototype = new person();
+personObj2 = new personObj();
+personObj2.changeName("JACK BENNY");// this works
+console.log("my age is = "+personObj2.age); // this works - gets age from personObj
+
+
+//console.log(personObj2.name+" THIS WILL WILL WORK");// this works
+//console.log(personObj2.changeName("JACK BENNY")+" ***THIS WILL WILL WORK WORK");// this works
+
+
+
+//var myMother = new person();
+//myMother.changeName(); // will work because changeName() belongs to myMother object scope.
+
+
+////////////////////////////////////////////////////////////////
+
+var myobj = {
+		mynm:function(){ 
+			console.log ("THIS IS MY FUNCT");
+			//pig="MASTER WILLY"; // global because no 'var' or 'this'.
+			//this.pig = "TINEY WINEY"; // belongs to object because of 'this'.
+			//var pig = "OUTFUNCTPIG";
+			var innerFunct = function(){
+				//var pig = "INNER PIG";
+				console.log(pig+" in INNER"); // (1)will log INNER PIG if has var pig (local).  (2) OUTFUNCTPIG if var pig in outer function. (3) JONNY (global) if no var local or no var in outer function.
+				}
+			
+			innerFunct();
+		},
+		
+		pig:"JONAS",
+		man:"JOHN DOE"
+		
+}
+
+
+
+var pig = "JONNY";
+//console.log(pig+" GLOBAL BEFORE function changed it");
+//console.log(myobj.pig+" BEFORE function changed it");
+//myobj.mynm();
+//console.log(pig+" GLOBAL AFTER function changed it");
+//console.log(myobj.pig+" AFTER function changed it");
+
+
+ispli("nurses run");
+
+function ispli(str){
+	var comparStr="";
+	for(var i=str.length-1; i>=0; i--){
+		comparStr += str[i];
+	}
+	
+	console.log(comparStr);
+}
+
+findDups("the big dog small and the big cat small sat cat by the small cat dog");
+
+function findDups(str){
+	var i=0;
+	var wordObj = {};
+	var singleWordArray = [];
+	strArray = str.split(" ");
+	for(i=0;i<strArray.length;i++){
+		if(!wordObj[strArray[i]]){
+			wordObj[strArray[i]] = {};
+			wordObj[strArray[i]].name = strArray[i];
+			wordObj[strArray[i]].count = 1;
+			singleWordArray.push(strArray[i]);
+		}else{
+			wordObj[strArray[i]].count +=1;
+		}
+	}
+	
+	for(i=0;i<singleWordArray.length;i++){
+	console.log("the word "+wordObj[singleWordArray[i]].name+" appears "+wordObj[singleWordArray[i]].count+" times");
+	}
+
+}
+	
+//////////// 
+  
+function findDuplicates(str){
+	strArr = str.split(" ");
+	newStrArr = [];
+	newStr = "";
+	strObj = {};
+	var i=0;
+	for(i=0;i<strArr.length;i++){
+		if(!strObj[strArr[i]]){
+			
+			strObj[strArr[i]] = true;
+			//newStrArr.push(strArr[i]); // will also work with ?**
+			newStr += strArr[i]+" ";
+		}
+	}
+	//?**//newStr = newStrArr.join(" ");
+	console.log(newStr);
+}
+    
+findDuplicates("the new dog went shopping for new things and the other things");// this works 
+  
+/////////////  
+  
+  
   </script>
 </head>
-<body>
+<body style="background-color:grey">
+
+
+<div id="canvas-div" style="height:400; width:60; padding:'0px'; border:'0px'">
+</div>
+
+<textarea style="width:300;height:300" id="keyText">a/nbcdefg</textarea>
+<button id="goButton1">go</button>
+
+<div id="canvas-div" style="height:50">
+</div>
+
+<input type="text" id="paliText" style="width:300">
+<button id="goButton2">go</button>
+
+
+<script>
+
+////////////////////////////////////////////////////////////////
+goButton1.addEventListener("click", calculate);
+keyText.value = "John,2"+"\n"+"Jane,3"+"\n"+"John,4"+"\n"+"Jane,5";
+
+goButton2.addEventListener("click", isPalin);
+
+function calculate(){
+	
+	var personArray = [];
+	var personObject = {}
+	var allPersonsArray = [];
+	var i;
+	
+	if(keyText.value == ""){
+		keyText.value = "John,2"+"\n"+"Jane,3"+"\n"+"John,4"+"\n"+"Jane,5";
+		//return
+	}
+
+	personArray = keyText.value.split("\n");
+
+	try{
+   if(haveClicked){
+	   haveClicked = false;
+	   keyText.value = "";
+	   keyText.value = "John,2"+"\n"+"Jane,3"+"\n"+"John,4"+"\n"+"Jane,5";
+	   return
+   }
+	}catch(e){}
+
+	
+	for(i=0;i<personArray.length;i++){
+		
+	   var name_value = personArray[i].split(",");
+	   var nm = name_value[0];
+	   var vl = parseInt(name_value[1]);
+		if(personObject[nm]){
+			personObject[nm].valAmount += vl;
+			continue
+		}
+		if(!personObject[nm]){
+			personObject[nm] = {};
+			personObject[nm].name = nm;
+			personObject[nm].valAmount = vl;
+			allPersonsArray.push(personObject[nm]);
+		} 
+	}
+	
+	keyText.value = "";
+	
+	for(i=0;i<allPersonsArray.length;i++){
+		keyText.value += allPersonsArray[i].name+" AMOUNT IS = "+allPersonsArray[i].valAmount+"\n";
+	}
+	
+	haveClicked = true;
+}
+//////////////////////////////////////////////////////////////////////
+
+
+function isPalin() {
+	var tx = document.getElementById("paliText");
+	str = tx.value;
+    str = str.replace(/\W/g, '').toLowerCase();
+    tx.value = (str == str.split('').reverse().join(''));
+}
+
+////////////////////////////////////////////////////////////////////
+
+var par_canvas = document.createElement("canvas");
+var par_ctx = par_canvas.getContext("2d");
+par_ctx.fillStyle = "blue";
+par_ctx.fillRect(0, 0, 60, 400);
+par_canvas.width = 60;
+par_canvas.height = 300;
+par_canvas.x = 0;
+par_canvas.y = 0;
+
+var mycan = document.createElement("canvas");
+var ctx = mycan.getContext("2d");
+mycan.width = 60;
+//mycan.height = 60;
+mycan.height = 400;
+mycan.x = 0;
+mycan.y = 0;
+var xpos = mycan.width / 2;
+var ypos = mycan.height / 2;
+ctx.fillStyle = "red";
+ctx.font = "30px Arial";
+var txt = "10";
+ctx.textAlign = "center";
+//ctx.fillRect(0, 0, mycan.width, mycan.height);
+ctx.fillRect(0, 0, mycan.width, 400);
+ctx.fillStyle = "blue";
+ctx.textBaseline = "middle";
+ctx.fillText(txt, xpos, ypos);
+//par_canvas.appendChild(mycan);
+
+var ele = document.getElementById("canvas-div");
+ele.appendChild(mycan);
+
+
+////
+var odoDigitHeight = 50;
+var odoDigit = 0;
+var itemsArray = [{}, {}, {}, {}, {}, {}];
+var itemsArrayLt = itemsArray.length;
+for(var i=0; i<10; i++){
+	
+	console.log("THE NUMBER IS = "+odoDigit);
+	odoDigit += 50;
+}
+
+
+
+
+
+//////
+
+</script>
+
+
 
           <div class="homecaption"><span class="site-color-green-hilight">Created (coded - no framework) a JAVASCRIPT and XML IMAGE-TEXT-MODULE (seen below and elsewhere on site)</span>
 			<ul>
