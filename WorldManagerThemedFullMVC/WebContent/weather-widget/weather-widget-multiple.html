@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+  <script type="text/javascript" src="js/rd-http.js"></script>
+  <script type="text/javascript" src="js/WeatherWidget.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/weather-widget.css" >
+  
+  <script type="text/javascript">
+  window.onload = function(){
+	  var rqurl = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22fairfax%2C%20va%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithke';
+	  var rqur2 = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22nome%2C%20ak%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
+	  var rqur3 = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22new%20york%2C%20ny%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
+	  var rqur4 = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22boston%2C%20ma%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
+	  var rqur5 = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22miami%2C%20fl%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
+	  var rqur6 = 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22san%20francisco%2C%20ca%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys';
+	  
+	  /*
+	  JUST 2 LINES OF CODE (BELOW) LOADS THE WEATHER WIDGET IN ANY WEB PAGE.
+	  JUST PROVIDE A DIV WITH AN ID AND AN 'https://query.yahooapis.com' END POINT.
+	  */
+	  
+	  var weatherWidget01 = new WeatherWidget();
+
+	  // MULTIPLE CALLS TO loadWidget() METHOD WILL PRODUCE MULTIPLE WIDGETS [NOTE: ONLY ONE WIDGET CLASS NEEDED]
+	  weatherWidget01.loadWidget("weather-widget-location-02", rqurl);
+	  weatherWidget01.loadWidget("weather-widget-location-02", rqur2);
+	  weatherWidget01.loadWidget("weather-widget-location-02", rqur3);
+	  weatherWidget01.loadWidget("weather-widget-location-02", rqur4);
+	  weatherWidget01.loadWidget("weather-widget-location-02", rqur5);
+	  weatherWidget01.loadWidget("weather-widget-location-02", rqur6);
+  }
+  </script>
+  
+</head>
+<body>
+    <h5>JUST 2 LINES OF CODE LOADS THE WEATHER WEDGIT IN ANY WEB PAGE.</h5>
+    <div id="weather-widget-location-02"></div>
+
+  
+</body>
+</html>
